@@ -6,7 +6,7 @@ export default function App() {
   const [usersCount, setUsersCount] = useState(0)
 
   const usersHandler = async () => {
-    await fetch('http://localhost:8080/api/users')
+    await fetch('api/users')
     .then(res => res.json())
     .then(data => {
       if (data.count) {
